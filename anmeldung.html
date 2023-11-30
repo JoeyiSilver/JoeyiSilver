@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rennrad Werk - Anmeldung</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        .navbar {
+            background: #131313;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar__container {
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            z-index: 1;
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 50px;
+        }
+
+        #navbar__logo {
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 3rem;
+        }
+
+        /* Andere CSS-Stile hier */
+
+        .login-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .login-screen-content {
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        /* Andere CSS-Stile hier */
+
+        .block-footer {
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-bicycle"></i>RENNRAD-WERK</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Zubehör.html" class="navbar__links">Zubehör</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Fertige-Fahrräder</a>
+                </li>
+                <li class="navbar__item navbar__btn">
+                    <a href="/anmeldung.html" class="button">Anmelden</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="login-screen">
+        <div class="view">
+            <div class="page login-screen-page">
+                <div class="page-content login-screen-content">
+                    <div class="login-screen-title" style="color: inherit;">RENNRAD-WERK</div>
+                    <form>
+                        <div class="list">
+                            <!-- Benutzername und Passwortfelder -->
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Username</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" name="username" placeholder="Username" />
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Password</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" name="password" placeholder="Password" />
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <!-- Anmelden-Button und zusätzliche Informationen -->
+                            <ul>
+                                <li>
+                                    <a href="#" class="list-button">Anmelden</a>
+                                </li>
+                            </ul>
+                            <div class="block-footer">Some text with login information.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
